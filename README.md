@@ -1,11 +1,16 @@
 # go-web-server
 Basic web server in go lang
 
-# added dockerfile
-made docker image from docker file. 
+## Added dockerfile
+Added docker file . Also added multistage dockerfile , huge difference in image size
 
-# problem 
-However the problem was to send requests from host to container and unable to curl it.
+## Resolved issues
+Resolved previous issues by adding go.mod and installing required packages for the same project. 
 
-# upcoming update
-pushing working docker image to docker hub. ( working on it )
+### 1. pull the docker image 
+```docker pull arqamh/go-server```
+### 2. run the container 
+```docker run -p 8080:8080 -it arqamh/go-server```
+### 3. Server started 
+` Starting server at port 8080 `
+
